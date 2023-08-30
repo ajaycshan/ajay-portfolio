@@ -1,162 +1,360 @@
-/* :root {
-    font-size: 62.5%;
-    --font-main: 'Arial', sans-serif;
+/* Root font + color patterns */
+:root {
+    font-size: 60%;
+    --font-main: 'Fantasy', sans-serif;
     --font-code: 'Inconsolata', monospace;
-    TODO: Add colours -- 
-} */
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    --black: #021C1D;
+    --lime-green: #6ebd0c;
+    --white: #ddddde;
+    --blue: #2aefcb;;
+    --off-white: #FDF1E1;
 }
 
 body {
-    background-color: #d9dcd6;
-}
-
-header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color: var(--black);
+    color: var(--off-white);
+    font-family: var(--font-main);
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.5;
 }
 
 h1 {
-    display: inline-block;
-    font-size: 48px;
+    color: var(--black);
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: left;
+    padding: 20px;
 }
 
-.seo {
-    color: #d9dcd6;
+h2,
+h3,
+h4,
+h5 {
+    color: var(--off-white);
+    font-family: var(--font-main);
+    font-weight: 700;
+    margin: 40px 0;
 }
 
-nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+h2 {
+    font-size: 6rem;
 }
 
-ul {
-    list-style-type: none;
+h3 {
+    font-size: 5rem;
 }
 
-li {
-    display: inline-block;
-    margin-left: 25px;
+h4 {
+    font-size: 3rem;
+    margin: 20px 0;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
+.font-code {
+    color: var(--blue);
+    font-family: var(--font-code);
+    font-size: 3rem;
 }
 
-p {
-    font-size: 20px;
-}
-
-figure {
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
+/* Set page margin. */
 main {
-    width: 75%;
-    display: inline-block;
+    margin: 0 10vw;
+}
+
+/* Define section divider appearance. */
+hr {
+    border: 1px solid var(--blue);
+    width: 300px;
+    margin: 40px 0;
+}
+
+
+/* ===HEADER=== */
+
+/* Define header appearance. */
+header {
+    background-color: var(--lime-green);
+}
+
+/* Define navigation bar appearance. */
+nav {
+   background-color: var(--white); 
+   color: var(--black);
+   font-family: var(--font-main);
+   font-weight: 700;
+   font-size: 2.5rem;
+   width: 50vw;
+   float: right;
+   position: relative;
+   margin-top: -20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* ===HERO=== */
+
+/* Define appearance of hero section. */
+#hero {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+
+#hero p {
+    margin-top: 40px;
+}
+
+figure img {
+    width: 33vw;
+    margin-left: 80px;
+    border-radius: 50%;
+    box-shadow: 15px 10px 15px var(--lime-green);
+}
+
+/* ===ABOUT=== */
+
+/* Use flex to create about section with text on the left and icons on the right. */
+
+#about-flex {
+    display: flex;
+}
+
+/* Define appearance of about text. */
+#about-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.pop-box {
+    background-color: var(--blue);
+    color: var(--black);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+#about-text ul {
+    list-style: outside;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+/* Define appearance of about icons. */
+#about-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    margin: 0 5vw;
+}
+
+/* ===WORK=== */
+
+/* Define appearance of text in work section. */
+#work h4, #work p {
     margin-left: 20px;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+#work a {
+    color: var(--off-white);
+    text-decoration: none;
 }
 
-/* Consolidating CSS properties for h2 heading attributes to avoid repetition */
-.benefit-lead,
-.benefit-brand,
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
+/* Define appearance of primary application. */
+.major {
+    border: 3px solid var(--lime-green);
+    width: 80vw;
+    margin-bottom: 40px;
 }
 
-/* Consolidating CSS properties for h2 heading attributes to avoid repetition */
-.benefit-lead h3,
-.benefit-brand h3,
-.benefit-cost h3 {
+.major img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+/* Define appearance of secondary applications. */
+#minor {
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.minor-sub {
+    border: 3px solid var(--lime-green);
+    width: 39vw;
+    height: 40vh;
+    margin-bottom: 20px;
+}
+
+.minor-sub img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    margin: 10px 0;
+}
+
+
+/* ===CONTACT=== */
+
+/* Define display of contact section. */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Define appearance of links in contact section. */
+#contact a {
+    color: var(--black);
+    background-color: var(--lime-green);
+    text-decoration: none;
+    font-family: var(--font-main);
+    font-weight: 700;
+    width: 150px;
+    padding: 15px;
+    margin: 30px;
+    text-align: center;
+}
+
+/* Center links in contact section. */
+#links-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ===CONTACT-BAR=== */
+
+/* Define appearance of icons in contact bar and set to bottom-right of screen. */
+#contact-bar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    line-height: 0;
+}
+
+#contact-bar a {
+    background: var(--blue);
+    margin: 10px;
+    border-radius: 50%;
+    border: 10px solid var(--blue);
+}
+
+#contact-bar img {
+    height: 40px;
+    width: 40px;
+}
+
+/* ===FOOTER=== */
+
+/* Define appearance of footer. */
+footer {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer h5 {
+    margin-top: 20px;
     margin-bottom: 10px;
-    text-align: center;
-    font-size: 25px;
 }
 
-/* Consolidating CSS properties for h2 heading attributes to avoid repetition */
-.benefit-lead img,
-.benefit-brand img,
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+/* ===VIEWPORT-RESPONSES=== */
+
+/* Tablets - Remove about icons, adjust text size, adjust secondary work tiles to fill whole width of screen instead of a third. */
+@media screen and (max-width: 992px) {
+    h2 {
+        font-size: 7rem;
+    }
+
+    #about-icons img {
+        display: none;
+    }
+
+    #about-flex, #about-text {
+        display: inline;
+        width: auto;
+        margin-right: 0;
+    }
+
+    #secondary-work {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondary-work-card {
+        width: 80vw;
+        margin-bottom: 30px;
+    }
+  }
+  
+/* Large smartphones -  Remove contact bar and center everything. */
+@media screen and (max-width: 768px) {
+    #contact-bar {
+        display: none;
+    }
+
+    h2, h3, h4, p, ul, li, .pop-box {
+        margin: auto;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 6rem;
+    }
+
+    h3, .pop-box {
+        margin-bottom: 30px;
+    }
+
+    hr {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav {
+        width: 100vw;
+        margin: 0;
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+
+    figure img {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    #contact a {
+        margin: 15px;
+    }
+    
+    #work h4, #work p {
+        margin-left: 0;
+    }
 }
-
-/* Consolidating CSS properties for h2 heading attributes to avoid repetition */
-.search-engine-optimization,
-.online-reputation-management,
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+  
+/* Small smartphones - Reduce size of all text. */
+@media screen and (max-width: 576px) {
+    :root {
+        font-size: 50%;
+    }
 }
-
-.search-engine-optimization img,
-.online-reputation-management img,
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-/* Consolidating CSS properties for h2 heading attributes to avoid repetition */
-.search-engine-optimization h2,
-.online-reputation-management h2,
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 40px;
-}
-
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-.footer h4 {
-    font-size: 20px;
-}
-
-
-
-
-
