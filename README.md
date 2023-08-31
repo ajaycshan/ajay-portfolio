@@ -10,14 +10,10 @@ The purpose of this project is to create a professional web development portfoli
 - Ensure user is taken to link to deployed application where relevant
 - Ensure responsive layout that adapts to viewport when resizing page
 
-## Scout Rule: Additional Improvements
-- Consolidated CSS selectors and properties
-- Commented CSS code where relevant
-- Ensured that links are functioning correctly
-
 ## Webpage Preview
-![Webpage Screenshot 1](assets/images/webpage-1.png)
-![Webpage Screenshot 2](assets/images/webpage-2.png)
+![Webpage Screenshot 1](assets/images/portfolio-webpage-1.png)
+![Webpage Screenshot 2](assets/images/portfolio-webpage-2.png)
+![Webpage Screenshot 3](assets/images/portfolio-webpage-3.png)
 
 ## Link to Deployed Application
 [Deployed Webpage](https://ajaycshan.github.io/wk-1-challenge/)
