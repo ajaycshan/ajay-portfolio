@@ -16,4 +16,4 @@ The purpose of this project is to create a professional web development portfoli
 ![Webpage Screenshot 3](assets/images/portfolio-webpage-3.png)
 
 ## Link to Deployed Application
-[Deployed Webpage](https://ajaycshan.github.io/wk-1-challenge/)
+[Deployed Webpage](https://ajaycshan.github.io/ajay-portfolio/)
