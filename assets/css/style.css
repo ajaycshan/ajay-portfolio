@@ -137,12 +137,12 @@ figure img {
     height: 100px;
     width: 100%;
     object-fit: cover;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 /* Appearance for smaller (minor) cards */
 #minor {
-    max-width: 80vw;
+    max-width: 400vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -151,8 +151,8 @@ figure img {
 .minor-sub {
     border: 3px solid var(--lime-green);
     width: 39vw;
-    height: 40vh;
-    margin-bottom: 10px;
+    height: 50vh;
+    margin-bottom: 80px;
 }
 
 .minor-sub img {
@@ -198,6 +198,10 @@ footer {
 footer h5 {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.sample {
+    margin-bottom: 30px;
 }
 
 /* Responsiveness */
